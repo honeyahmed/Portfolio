@@ -2,7 +2,7 @@ import React from "react";
 
 const Resume = ({ resume }) => {
   return (
-    <div ref={resume} className={'mb-5'}>
+    <div ref={resume} className={"mb-5"}>
       <h6
         className="welcomeText mb-3 mt-5 fw-bold"
         style={{ color: "#EF98A7" }}
@@ -10,7 +10,7 @@ const Resume = ({ resume }) => {
         Resume
       </h6>
       <h2 className="welcomeTitle">SKILLS & EXPERIENCE</h2>
-      <div className="row gx-5 d-flex m-auto justify-content-center" >
+      <div className="row gx-5 d-flex m-auto justify-content-center">
         <div className="col-md-6 ">
           <h6
             className="welcomeText mb-2 mt-5 fw-bold"
@@ -202,8 +202,9 @@ const Resume = ({ resume }) => {
               <span className="text-muted">From March 2022: May 2022</span>
               <p className="mt-3">
                 The internship was in front-end development using Vue.js
-                framework in a company called "Algoriza". We did alot of projects and I learned from them alot
-                specially integration with backend and ui/ux teams.
+                framework in a company called "Algoriza". We did alot of
+                projects and I learned from them alot specially integration with
+                backend and ui/ux teams.
               </p>
             </div>
             <div className="col-md-12 expBox p-4 mt-4">
@@ -215,9 +216,20 @@ const Resume = ({ resume }) => {
               </h6>
               <span className="text-muted">From June 2022: Now</span>
               <p className="mt-3">
-                The internship was in front-end development using Vue.js
-                framework in a company called "Algoriza". We did alot of projects and I learned from them alot
-                specially integration with backend and ui/ux teams.
+                I'm working as Front-End Developer with React.js framework . I
+                joined company called "Solutions For Information Technology" in
+                June 2022. My First project with this company is a Dashboard for
+                mobile application called "Atfaluna". Link of dashboard{" "}
+                <a
+                  href="http://admin.kunozworld.com/"
+                  style={{
+                    textDecoration: "none",
+                    color: "RGB(128, 112, 148)",
+                    fontWeight: "bold",
+                  }}
+                >
+                  Admin App
+                </a>
               </p>
             </div>
           </div>
