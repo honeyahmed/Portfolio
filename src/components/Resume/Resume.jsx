@@ -221,7 +221,7 @@ const Resume = ({ resume }) => {
                 June 2022. My First project with this company is a Dashboard for
                 mobile application called "Atfaluna". Link of dashboard{" "}
                 <a
-                  href="http://admin.kunozworld.com/"
+                  href="http://admin.kunozworld.com/" target={'_blank'}
                   style={{
                     textDecoration: "none",
                     color: "RGB(128, 112, 148)",
