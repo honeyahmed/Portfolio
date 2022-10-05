@@ -1,13 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap");
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background: rgb(33, 31, 31);
+  background-color: rgb(33, 31, 31);
+  background-image: linear-gradient(
+    0deg,
+    rgb(33, 31, 31) 0%,
+    rgb(33, 31, 31) 100%
+  );
+  height: 100%;
+  width: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h2,
+h1,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  color: white;
 }
+/* Nav Links */
+
+.navItem,
+.welcomeText {
+  font-family: "Montserrat", sans-serif;
+
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  text-transform: uppercase;
+  font-size: 12px !important;
+  letter-spacing: 1.4px;
+  cursor: pointer;
+}
+.navItem:hover {
+  color: white;
+}
+/* scroll to top button */
+.top-btn-position {
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
+}
+
+.top-btn-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  background-color: #333;
+  color: white;
+  font-size: 24px !important;
+  cursor: pointer;
+  animation: beat 0.25s infinite alternate;
+  transform-origin: center;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+/* Heart beat animation */
+@keyframes beat {
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.top-btn-style:hover {
+  animation: none;
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #fff;
+}
+/*about*/
+.welcomeTitle {
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 40px;
+}
+.welcomeTitle span {
+  color: #ef98a7;
+}
+.typedStyle {
+  font-weight: 800;
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+}
+.skill {
+  width: 40px;
+  height: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  align-items: center;
+  background-color: #604f71;
+  font-size: 20px !important;
+  box-shadow: inset 21px 21px 19px #604f71, inset -21px -21px 19px #604f71;
+}
+/* .imgBg{
+  width: 100%;
+  height: 500px;
+  background-color:RGB(31, 33, 37);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;  position: relative;
+} */
+.bg-pos {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  left: 0;
+}
+.bg-pos img {
+  height: 500px !important;
+
+  width: 100% !important;
+}
+
+.imgBg {
+  /* Modify size here: */
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 450px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  border-radius: 10px;
+}
+/*icons social media*/
+
+.icon-bar {
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 0;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 6px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 22px !important;
+}
+.icon-bar a:hover {
+  color: white;
+}
+
+.facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.twitter {
+  background: #55acee;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.github {
+  background: #000;
+  color: white;
+}
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+}
+.whatsapp {
+  background-color: RGB(42, 182, 64);
+  color: white;
+}
+.edu {
+  box-shadow: rgba(118, 118, 122, 0.1) 0px 4px 8px,
+    rgba(63, 63, 69, 0.05) 0px 8px 18px;
+  border-radius: 10px;
+  color: white;
+}
+.edu:hover {
+  box-shadow: none;
+  border-top: white 2px solid;
+  border-right: white 2px solid;
+  border-left: #604f71 4px dotted;
+  border-bottom: #604f71 4px dotted;
+  border-radius: 5px;
+}
+.edu:hover p {
+  color: white !important;
+}
+.edu p {
+  font-family: "Montserrat", sans-serif;
+}
+.eduIcon {
+  font-size: 32px;
+  color: #ef98a7;
+}
+
+.progress {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+.progress-bar {
+  border-radius: 5px;
+  background: #e03f97;
+  background: -webkit-linear-gradient(to right, #f7bea9, #ef98a7);
+  background: -o-linear-gradient(to right, #f7bea9, #ef98a7);
+  background: -moz-linear-gradient(to right, #f7bea9, #ef98a7);
+  background: -ms-linear-gradient(to right, #f7bea9, #ef98a7);
+  background: linear-gradient(to right, #f7bea9, #ef98a7);
+  -webkit-transition: 600ms cubic-bezier(0.6, 0, 0.38, 1);
+  -moz-transition: 600ms cubic-bezier(0.6, 0, 0.38, 1);
+  -o-transition: 600ms cubic-bezier(0.6, 0, 0.38, 1);
+  -ms-transition: 600ms cubic-bezier(0.6, 0, 0.38, 1);
+  transition: 600ms cubic-bezier(0.6, 0, 0.38, 1);
+  animation-name: progressBar;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+}
+@keyframes progressBar {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+.expBox {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  border-radius: 10px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.expBox:hover {
+  transform: scale(1.1);
+}
+.expBox:hover p {
+  color: #f7bea9;
+}
+.expBox:hover span {
+  color: white !important;
+}
+.boxText {
+  text-decoration: none;
+  margin-right: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+.expBox span {
+  font-size: 10px !important;
+}
+.expBox p {
+  font-size: 14px !important;
+}
+.eduBox {
+  justify-content: center;
+  align-items: center;
+}
+.socailMedia {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.fb {
+  background-color: RGB(59, 89, 152);
+  color: white;
+}
+.fb .icon,
+.tw .icon,
+.gm .icon,
+.ws .icon,
+.gt .icon,
+.ln .icon {
+  font-size: 24px !important;
+  transition: 1s;
+}
+.fb:hover .icon,
+.tw:hover .icon,
+.gm:hover .icon,
+.ws:hover .icon,
+.gt:hover .icon,
+.ln:hover .icon {
+  transform: rotate(-360deg);
+  -ms-transform: rotate(-360deg);
+  -webkit-transform: rotate(-360deg);
+  color: white;
+}
+.tw {
+  background-color: RGB(85, 172, 238);
+  color: white;
+}
+.gm {
+  background: #dd4b39;
+  color: white;
+}
+.ws {
+  background-color: RGB(42, 182, 64);
+  color: white;
+}
+.gt {
+  background-color: #000;
+  color: white;
+}
+.ln {
+  background: #007bb5;
+  color: white;
+}
+.edu a {
+  color: white !important;
+}
+/*animaaaaaaation*/
+.dwnIcon {
+  animation: bounce 0.6s ease infinite alternate;  }
+@keyframes bounce {
+  0% {
+
+    transform: translateY(0px);
+  }
+  100% {transform: translateY(-10px);}
+  }
